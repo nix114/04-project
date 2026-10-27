@@ -44,6 +44,9 @@ nav li.active a {background-color: #024873;
     color: #9266ED;
     
 }
+.gallery-page{
+   background-color: #024873 ;
+}
 main h1{
 color: #b40412;
 }
@@ -99,6 +102,7 @@ footer{
     background-color: #eaeaea;
     text-align: center;
     padding: 1rem 0;
+    clear:both;
 }
 footer p{
     margin: 0;
@@ -106,3 +110,18 @@ footer p{
     color: #333;
     letter-spacing: 3px;
 }
+main figure{ 
+    float: right;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallery figcaption{
+    text-align: center;
+    color: #eaeaea;
+    font-weight: bolder;
+    
+}
+m
