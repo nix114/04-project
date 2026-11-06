@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lawn Care Options</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- start the page header -->
+    <header>
+        <span>Preference for Lawn Care</span>
+    </header>
+
+    <!-- start the page navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">equipment and technique</a></li>
+            <li><a href="techniques.html">why it matters</a></li>
+            <li><a href="gallery.html">gallery</a></li>
+            <li class="active"><a href="lawn care options.html">lawn care options</a></li>
+        </ul>
+    </nav>
+
+    <!-- start the page main -->
+    <main>
+        <h1>lawn care</h1>
+        <p>thanks for choosing us!</p>
+        
+        <!-- FUNCTIONALITY: method set to GET, action set to open thanks.html -->
+        <form method="get" class="myForm" action="thanks.html">
+
+            <!-- STYLING: Fieldsets and legends styled -->
+            <fieldset>
+                <legend>customer information</legend>
+                <!-- DESIGN PROXIMITY: Instructions visually grouped with input -->
+                <label>First Name*<input type="text" name="fname" required></label>
+                <label>Last Name*<input type="text" name="lname" required></label>
+                <label>Cell Number*<input type="tel" name="phone" required placeholder="435-123-4567"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>mowing height</legend>
+                <div class="radio-group">
+                    <label><input type="radio" name="method" value="drone">3.5 inches</label>
+                    <label><input type="radio" name="method" value="cycle">3 inches</label>
+                    <label><input type="radio" name="method" value="robot">2 inches</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>options</legend>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="edging" value="chosen"> edging</label>
+                    <label><input type="checkbox" name="mowing" value="chosen"> mowing</label>
+                    <label><input type="checkbox" name="driveway" value="chosen"> bush trimming</label>
+                    <label><input type="checkbox" name="garage" value="chosen"> raking</label>
+                </div>
+
+                <label class="select-label">Preferred mowing time
+                    <select name="time">
+                        <option value="none">please select</option>
+                        <option value="morning">between 7:00 am and 11:00 am</option>
+                        <option value="noon">between 11:00 am and 2:00 pm</option>
+                        <option value="afternoon">between 2:00 pm and 5:00 pm</option>
+                        <option value="evening">between 5:00 pm and 8:00 pm</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <label class="textarea-label">Comments
+                <textarea name="comments">please add any special instructions</textarea>
+            </label>
+
+            <!-- SUBMISSION BUTTON: Styled with color, border, padding, and round corners -->
+            <input type="submit" value="send delivery request">
+        </form>
+    </main>
+
+    <!-- start the page footer -->
+    <footer>
+        <p>&copy; 202X Torpid Traveler &bull; nixon &bull; Web Essentials</p>
+    </footer>
+</body>
+</html>
